@@ -87,14 +87,21 @@ th {
       <h4 class="card-title"> Dokter </h4>
       <p class="card-text">Saya menjadi dokter dari tahun 1999</p>
       <a href="#" class="btn btn-primary">Lebih lanjut</a>
+
     </div>
   </div>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-6" id="imgbox1">
     <h2><strong>Kendaraan</strong></h2>
     <p>Motor adalah kendaraan yang saya pakai sehari-hari</p>
     <img src="vespa.jpg" class="img-thumbnail" alt="motor vespa" width="400px" height="236">  
+    
+    <button onclick="changeVisibility()">Hide Image</button>
+    
+
+
   </div>
+  
 </div>
 
 <div class="container">
@@ -134,9 +141,24 @@ th {
   </div>
 </div>
 
+<div class="container">
+  <h2><strong>Media</strong> </h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item"> Facebook</a>
+    <a href="#" class="list-group-item">Instagram</a>
+    <a href="#" class="list-group-item">Twitter</a>
+    </div>
+</div>
 
 <!-- AKHIR  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+      function changeVisibility() {
+      document.getElementById("imgbox1").style.visibility = "hidden";
+    }
+    
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 
